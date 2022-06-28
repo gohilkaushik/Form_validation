@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <div class="main">
+        <div class="main-box">
+            <h1>Ragistration form</h1>
+            <form id="form" onsubmit="validation(event)">
+                <div class="form-group">
+                    <label class="form-label">User Name</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter your fullname">
+                    <small id="usererror" class="error">User name is not vaild</small>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    <small id="usererror" class="error">Email is not vaild</small>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                    <small id="usererror" class="error">Password is not vaild</small>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="capassword" placeholder="Enter your confirm password">
+                    <small id="usererror" class="error">Password is not match</small>
+
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Mobile Number</label>
+                    <input type="number" class="form-control" id="number" placeholder="Enter your number">
+                    <small id="usererror" class="error">Number is not vaild</small>
+
+                </div>
+                <div class="form-group">
+                   <input type="submit" id="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+<script src="./js/script.js"></script>
+</body>
+</html>
